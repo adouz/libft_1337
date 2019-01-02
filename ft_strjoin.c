@@ -20,7 +20,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	if (s1 == 0 || s2 == 0)
 		return (0);
-	if (!(str = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1)))
+	if (!(str = ft_strnew(ft_strlen(s1) + ft_strlen(s2))))
 		return (NULL);
 	i = 0;
 	j = 0;
